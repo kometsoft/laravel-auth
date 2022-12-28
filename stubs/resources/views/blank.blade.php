@@ -3,7 +3,7 @@
 @section('header')
 <x-tab::page-header title="Untitled">
     <div class="btn-list">
-        <x-tab::button href="#" class="btn btn-primary" icon="plus" :label="__('New')"></x-tab::button>
+        <x-tab::a href="#" class="btn btn-primary" icon="plus" :label="__('New')"></x-tab::a>
     </div>
 </x-tab::page-header>
 @endsection

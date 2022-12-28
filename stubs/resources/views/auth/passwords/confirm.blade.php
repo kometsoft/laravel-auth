@@ -28,7 +28,7 @@
                                 <x-tab::button type="submit" class="btn btn-primary" :label="__('Confirm password')"></x-tab::button>
 
                                 @if(Route::has('password.request'))
-                                    <x-tab::button :href="route('password.request')" class="btn btn-link" :label="__('Forgot password?')"></x-tab::button>
+                                    <x-tab::a :href="route('password.request')" class="btn btn-link" :label="__('Forgot password?')"></x-tab::a>
                                 @endif
                             </div>
                         </div>
