@@ -1,6 +1,6 @@
 <?php
 
-namespace Kometsoft\Tabler;
+namespace Kometsoft\Auth;
 
 use Illuminate\Support\ServiceProvider;
 use App\Console\Commands\InstallCommand;
@@ -29,7 +29,7 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'tab');
 
-        // $this->loadTranslationsFrom(__DIR__ . '/lang', 'tabler');
+        // $this->loadTranslationsFrom(__DIR__ . '/lang', 'auth');
 
         // Config file
         $this->publishes([

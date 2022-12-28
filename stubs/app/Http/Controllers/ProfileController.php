@@ -1,6 +1,6 @@
 <?php
 
-namespace Tabler\App\Http\Controllers\Auth;
+namespace Auth\App\Http\Controllers\Auth;
 
 use App\Models\User;
 use Illuminate\Http\Request;

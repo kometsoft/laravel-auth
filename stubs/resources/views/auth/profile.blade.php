@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <form id="form-profile-account" action="{{ route('tabler.profile.update', $user) }}" method="POST">
+                <form id="form-profile-account" action="{{ route('auth.profile.update', $user) }}" method="POST">
                     @csrf
                     <div class="form-group mb-3 row">
                         <x-tab::label class="col-md-3 col-form-label" :label="__('Avatar')"></x-tab::label>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <form id="form-profile-password" action="{{ route('tabler.profile.update-password', $user) }}"
+                <form id="form-profile-password" action="{{ route('auth.profile.update-password', $user) }}"
                     method="POST">
                     @csrf @method('PUT')
                     <div class="form-group mb-3 row">
