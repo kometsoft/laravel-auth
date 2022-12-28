@@ -1,6 +1,6 @@
 {
   "name": "kometsoft/laravel-auth",
-  "description": "Laravel authentication scaffoldings",
+  "description": "Laravel authentication scaffoldings, with Tabler UI",
   "authors": [
     {
       "name": "aerrata",
