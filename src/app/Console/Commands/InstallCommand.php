@@ -13,14 +13,14 @@ class InstallCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'tabler:install';
+    protected $signature = 'auth:install';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Install the tabler resources.';
+    protected $description = 'Install the auth resources.';
 
     /**
      * Execute the console command.
@@ -31,9 +31,9 @@ class InstallCommand extends Command
     {
         $this->runCommands(['php artisan ui bootstrap --auth']);
 
-        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-config', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-assets', '--force' => true]);
-        $this->callSilent('vendor:publish', ['--tag' => 'laravel-tabler-stubs', '--force' => true]);
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-auth-config', '--force' => true]);
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-auth-assets', '--force' => true]);
+        $this->callSilent('vendor:publish', ['--tag' => 'laravel-auth-stubs', '--force' => true]);
 
         $this->runCommands([
             'npm install @tabler/core laravel-datatables-vite nouislider litepicker tom-select alpinejs autosize imask',
@@ -41,7 +41,7 @@ class InstallCommand extends Command
         ]);
         
         $this->line('');
-        $this->components->info('Tabler scaffolding installed successfully.');
+        $this->components->info('Auth scaffolding installed successfully.');
     }
 
     protected function runCommands($commands)

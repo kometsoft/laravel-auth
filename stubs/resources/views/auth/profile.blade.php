@@ -1,4 +1,4 @@
-@extends(config('laravel-tabler.layout.app'))
+@extends(config('laravel-auth.layout.app'))
 
 @section('header')
 <x-tab::page-header title="Profile"></x-tab::page-header>

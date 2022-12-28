@@ -1,6 +1,6 @@
 {
-  "name": "kometsoft/laravel-tabler",
-  "description": "A premium and open source dashboard template with a responsive and high-quality UI.",
+  "name": "kometsoft/laravel-auth",
+  "description": "Laravel authentication scaffoldings",
   "authors": [
     {
       "name": "aerrata",
@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "Kometsoft\\Tabler\\": "src/"
+      "Kometsoft\\Auth\\": "src/"
     },
     "classmap": [
       "/"
@@ -18,7 +18,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Kometsoft\\Tabler\\TablerServiceProvider"
+        "Kometsoft\\Auth\\AuthServiceProvider"
       ]
     }
   },

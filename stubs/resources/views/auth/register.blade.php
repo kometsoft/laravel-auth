@@ -1,11 +1,11 @@
-@extends(config('laravel-tabler.layout.guest'))
+@extends(config('laravel-auth.layout.guest'))
 
 @section('content')
 <div class="page page-center">
     <div class="container container-tight py-4">
         <div class="text-center mb-4">
             <a href="/" class="navbar-brand navbar-brand-autodark">
-                <img src="{{ config('laravel-tabler.logo_path') }}" height="36" alt="">
+                <img src="{{ config('laravel-auth.logo_path') }}" height="36" alt="">
             </a>
         </div>
         <div class="card card-md">

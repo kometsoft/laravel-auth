@@ -1,4 +1,4 @@
-@extends(config('laravel-tabler.layout.guest'))
+@extends(config('laravel-auth.layout.guest'))
 
 @section('content')
 <div class="container">

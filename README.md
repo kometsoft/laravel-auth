@@ -1,4 +1,4 @@
-# Laravel Tabler
+# Laravel Auth
 
 ## Requirements 
 - php 8.0
@@ -6,16 +6,16 @@
 
 ## Installations
 
-#### Install npm dependencies
+#### Install the composer package
 
 After a fresh laravel installation, run;
 
 ```
-composer require kometsoft/laravel-tabler
+composer require kometsoft/laravel-auth
 ```
 
 #### Run install command
 
 ```
-php artisan tabler:install
+php artisan auth:install
 ```
