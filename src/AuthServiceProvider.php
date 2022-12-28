@@ -3,7 +3,7 @@
 namespace Kometsoft\Auth;
 
 use Illuminate\Support\ServiceProvider;
-use App\Console\Commands\InstallCommand;
+use App\Console\Commands\InstallAuthCommand;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -54,7 +54,7 @@ class AuthServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                InstallCommand::class,
+                InstallAuthCommand::class,
             ]);
         }
     }
