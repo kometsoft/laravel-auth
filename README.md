@@ -1,8 +1,8 @@
 # Laravel Auth
 
 ## Requirements 
-- php 8.0
-- laravel/ui 4.0
+- php >=8.0
+- laravel/ui ^4.1
 
 ## Installations
 
