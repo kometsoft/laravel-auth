@@ -59,3 +59,19 @@ Pages with datatable should look like this.
     {{ $dataTable->scripts(attributes: ['type' => 'module']) }}
 @endpush
 ```
+
+
+TODO
+
+```php
+Route::middleware(['auth'])->name('admin.')->controller(App\Http\Controllers\Auth\ProfileController::class)->group(function () {
+    Route::get('profile', 'index')->name('profile.index');
+    Route::post('profile', 'store')->name('profile.store');
+    Route::get('profile/create', 'create')->name('profile.create');
+    Route::get('profile/{profile}', 'show')->name('profile.show');
+    Route::post('profile/{profile}', 'update')->name('profile.update');
+    Route::delete('profile/{profile}', 'destroy')->name('profile.destroy');
+    Route::get('profile/{profile}/edit', 'edit')->name('profile.edit');
+    Route::put('profile/{profile}/update-password', 'updatePassword')->name('profile.update-password');
+});
+```
